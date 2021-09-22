@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Reddit</string>
+    <string name="salution">Добро пожаловать в Reddit!</string>
+    <string name="button_name">Поехали!</string>
+</resources>
