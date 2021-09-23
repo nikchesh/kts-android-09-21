@@ -2,4 +2,8 @@
     <string name="app_name">Reddit</string>
     <string name="button_name">Start!</string>
     <string name="salution">Welcome to Reddit!</string>
+    <string name="login">Email</string>
+    <string name="password">Password</string>
+    <string name="auth">Log in</string>
+    <string name="mainText">gives you the best of the internet in one place.</string>
 </resources>

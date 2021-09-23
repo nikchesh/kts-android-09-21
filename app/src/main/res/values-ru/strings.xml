@@ -2,4 +2,9 @@
     <string name="app_name">Reddit</string>
     <string name="salution">Добро пожаловать в Reddit!</string>
     <string name="button_name">Поехали!</string>
+
+    <string name="login">Почта</string>
+    <string name="password">Пароль</string>
+    <string name="auth">Войти</string>
+    <string name="mainText">лучшее, что есть в интернете.</string>
 </resources>
