@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import timber.log.Timber
 
 class OnBoardingPage : Fragment(R.layout.fragment_salution) {
 
@@ -21,29 +20,9 @@ class OnBoardingPage : Fragment(R.layout.fragment_salution) {
         startButton?.setOnClickListener {
             findNavController().navigate(R.id.action_salutionFragment_to_loginFragment3)
         }
-        Timber.e("onActivityCreated ${hashCode()}")
 
     }
 
-
-    override fun onAttach(context: Context) {
-        super.onAttach(context)
-        Timber.e("onAttach ${hashCode()}")
-    }
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        Timber.e("onCreate ${hashCode()}")
-    }
-
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        return super.onCreateView(inflater, container, savedInstanceState)
-
-    }
 }
 
 

@@ -6,6 +6,4 @@ import kotlinx.parcelize.Parcelize
 @Parcelize
 data class LoginState(
         val valid: Boolean,
-
-
 ): Parcelable

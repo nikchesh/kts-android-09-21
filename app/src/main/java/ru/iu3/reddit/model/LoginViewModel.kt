@@ -21,5 +21,4 @@ class LoginViewModel : ViewModel() {
         } else
             mutableState.value = LoginState(false)
     }
-
 }
