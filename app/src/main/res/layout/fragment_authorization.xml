@@ -10,10 +10,10 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="128dp"
-        android:layout_marginBottom="50dp"
-        android:text="@string/auth"
-        android:textSize="30dp"
+        android:layout_marginTop="128sp"
+        android:layout_marginBottom="50sp"
+        android:text="@string/fragment_authorization_auth"
+        android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/textLogin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -24,21 +24,20 @@
         android:id="@+id/textLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40sp"
+        android:layout_marginTop="64sp"
+        android:layout_marginEnd="40sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView">
 
 
-
         <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
             android:id="@+id/inputLogin"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"
-            android:hint="@string/login" />
+            android:hint="@string/fragment_authorization_login_hint"
+            android:inputType="textEmailAddress" />
 
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -47,9 +46,9 @@
         android:id="@+id/textPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40sp"
+        android:layout_marginTop="30sp"
+        android:layout_marginEnd="40sp"
         app:endIconMode="password_toggle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -60,17 +59,17 @@
             android:id="@+id/inputPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            android:hint="@string/password"
-            />
+            android:hint="@string/fragment_authorization_password_hint"
+            android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/buttonLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:text="@string/auth"
+        android:layout_marginTop="64sp"
+        android:text="@string/fragment_authorization_auth"
+        android:enabled="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"

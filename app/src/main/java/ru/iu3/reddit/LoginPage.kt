@@ -15,71 +15,49 @@ import com.google.android.material.textfield.TextInputLayout
 import ru.iu3.reddit.model.LoginViewModel
 
 
-class LoginPage: Fragment(R.layout.fragment_authorization){
-    private var emailInput: TextInputEditText?= null
-    private var passwordInput: TextInputEditText?= null
-
+class LoginPage : Fragment(R.layout.fragment_authorization) {
+    private var emailInput: TextInputEditText? = null
+    private var passwordInput: TextInputEditText? = null
 
 
     private val viewModel: LoginViewModel by viewModels()
-
 
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         val loginButton = view?.findViewById<Button>(R.id.buttonLogin)
 
-        loginButton?.setEnabled(false)
-
-
-
         emailInput = view?.findViewById<TextInputEditText>(R.id.inputLogin);
         passwordInput = view?.findViewById<TextInputEditText>(R.id.inputPassword)
 
 
-        var isValidMail: Boolean
-        var isValidPassword: Boolean
-
-        fun checkValid(){
-            isValidMail = Patterns.EMAIL_ADDRESS.matcher(emailInput?.text.toString()).matches()
-            isValidPassword = passwordInput?.text.toString().length >= 8
-
-            if (isValidMail && isValidPassword) {
-                loginButton?.setEnabled(true)
-            }
-            else
-                loginButton?.setEnabled(false) // на случай, если сотрут уже написанное
-        }
-
-
-
-        emailInput?.addTextChangedListener(object : TextWatcher{
+        emailInput?.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
 
             override fun afterTextChanged(s: Editable?) {
-                checkValid()
+                viewModel.checkValid(passwordInput?.text.toString(), emailInput?.text.toString())
             }
 
         })
 
 
-        passwordInput?.addTextChangedListener(object : TextWatcher{
+        passwordInput?.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
 
             override fun afterTextChanged(s: Editable?) {
-                checkValid()
+                viewModel.checkValid(passwordInput?.text.toString(), emailInput?.text.toString())
             }
 
         })
 
 
         viewModel.state.observe(viewLifecycleOwner, { state ->
-
-                emailInput?.setText(state.inputEmail)
-                passwordInput?.setText(state.inputPassword)
-
+            if (state.valid)
+                loginButton?.setEnabled(true)
+            else
+                loginButton?.setEnabled(false)
         })
 
 
@@ -90,19 +68,10 @@ class LoginPage: Fragment(R.layout.fragment_authorization){
     }
 
 
-
-
-
     override fun onDestroyView() {
         super.onDestroyView()
         passwordInput = null
         emailInput = null
-    }
-
-    override fun onStop() {
-        super.onStop()
-        viewModel.updateInformation(emailInput?.text.toString(), passwordInput?.text.toString())
-        //делал текстовые поля без id, искал их через тег. Сохраняет состояние корректно.
     }
 
 

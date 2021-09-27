@@ -7,9 +7,9 @@
 
     <ImageView
         android:id="@+id/imageLogoAndText"
-        android:layout_width="352dp"
-        android:layout_height="215dp"
-        android:layout_marginTop="100dp"
+        android:layout_width="352sp"
+        android:layout_height="215sp"
+        android:layout_marginTop="100sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.609"
         app:layout_constraintStart_toStartOf="parent"
@@ -18,13 +18,13 @@
 
     <TextView
         android:id="@+id/textMain"
-        android:layout_width="266dp"
-        android:layout_height="135dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
+        android:layout_width="266sp"
+        android:layout_height="135sp"
+        android:layout_marginStart="32sp"
+        android:layout_marginTop="16sp"
+        android:layout_marginEnd="32sp"
         android:gravity="center"
-        android:text="@string/mainText"
+        android:text="@string/fragment_main_page_mainText"
         android:textColor="@color/black"
         android:textSize="28sp"
         app:layout_constraintEnd_toEndOf="parent"

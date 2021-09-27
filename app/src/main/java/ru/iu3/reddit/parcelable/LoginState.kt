@@ -5,6 +5,7 @@ import kotlinx.parcelize.Parcelize
 
 @Parcelize
 data class LoginState(
-        val inputEmail: String,
-        val inputPassword: String?
+        val valid: Boolean,
+
+
 ): Parcelable

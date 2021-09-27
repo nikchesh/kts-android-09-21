@@ -10,7 +10,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import timber.log.Timber
 
-class OnBoardingPage: Fragment(R.layout.fragment_salution) {
+class OnBoardingPage : Fragment(R.layout.fragment_salution) {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
@@ -23,7 +23,7 @@ class OnBoardingPage: Fragment(R.layout.fragment_salution) {
         }
         Timber.e("onActivityCreated ${hashCode()}")
 
-        }
+    }
 
 
     override fun onAttach(context: Context) {
@@ -36,51 +36,15 @@ class OnBoardingPage: Fragment(R.layout.fragment_salution) {
         Timber.e("onCreate ${hashCode()}")
     }
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
         return super.onCreateView(inflater, container, savedInstanceState)
-        Timber.e("onCreateView ${hashCode()}")
-    }
-
-    override fun onStart() {
-        super.onStart()
-        Timber.e("onStart ${hashCode()}")
-    }
-
-
-    override fun onResume() {
-        super.onResume()
-        Timber.e("onResume ${hashCode()}")
-    }
-
-
-    override fun onPause() {
-        super.onPause()
-        Timber.e("onPause ${hashCode()}")
-    }
-
-    override fun onStop() {
-        super.onStop()
-        Timber.e("onStop ${hashCode()}")
-    }
-
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-        Timber.e("onDestroyView ${hashCode()}")
 
     }
-
-
-    override fun onDestroy() {
-        super.onDestroy()
-        Timber.e("onDestroy ${hashCode()}")
-    }
-
-    override fun onDetach() {
-        super.onDetach()
-        Timber.e("onDetach ${hashCode()}")
-    }
-    }
+}
 
 
 

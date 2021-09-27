@@ -1,25 +1,25 @@
 package ru.iu3.reddit.model
 
+import android.util.Patterns
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import ru.iu3.reddit.parcelable.LoginState
 
 class LoginViewModel : ViewModel() {
-    private val mutableState = MutableLiveData(LoginState(inputEmail = "", inputPassword = ""))
+    private val mutableState = MutableLiveData(LoginState(valid = false))
 
     val state: LiveData<LoginState>
         get() = mutableState
 
-    fun updateInformation(mail: String, password: String) {
-        mutableState.value = LoginState(mail, password)
-    }
+    fun checkValid(passwordInput: String, emailInput: String) {
+        val isValidMail = Patterns.EMAIL_ADDRESS.matcher(emailInput).matches()
+        val isValidPassword = passwordInput.length >= 8
 
-/*
-    fun updateInformation(newEmail : String, newPassword : String){
-        mutableState.value = LoginState(inputEmail = newEmail, inputPassword = newPassword)
+        if (isValidMail && isValidPassword) {
+            mutableState.value = LoginState(true)
+        } else
+            mutableState.value = LoginState(false)
     }
-
- */
 
 }
