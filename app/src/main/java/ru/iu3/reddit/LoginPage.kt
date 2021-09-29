@@ -75,5 +75,4 @@ class LoginPage : Fragment(R.layout.fragment_authorization) {
     }
 
 
-
 }
