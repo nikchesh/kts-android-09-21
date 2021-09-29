@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">Reddit</string>
-    <string name="button_name">Start!</string>
-    <string name="salution">Welcome to Reddit!</string>
+    <string name="fragment_salution_button_name">Start!</string>
+    <string name="fragment_salution_salutionText">Welcome to Reddit!</string>
+    <string name="fragment_authorization_login_hint">Email</string>
+    <string name="fragment_authorization_password_hint">Password</string>
+    <string name="fragment_authorization_auth">Log in</string>
+    <string name="fragment_main_page_mainText">gives you the best of the internet in one place.</string>
 </resources>
