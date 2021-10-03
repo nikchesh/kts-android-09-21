@@ -1,9 +1,19 @@
 <resources>
     <string name="app_name">Reddit</string>
     <string name="fragment_salution_button_name">Поехали!</string>
-    <string name="fragment_salution_salutionText">Добро пожаловать в Reddit!</string>
+    <string name="fragment_salution_salutionText3">Добро пожаловать в Reddit!</string>
+    <string name="fragment_salution_salutionText0">Удобный интеофейс</string>
+    <string name="fragment_salution_salutionText1">Много годного контента</string>
+    <string name="fragment_salution_salutionText2">Непередаваемые эмоции</string>
     <string name="fragment_authorization_login_hint">Почта</string>
     <string name="fragment_authorization_password_hint">Пароль</string>
     <string name="fragment_authorization_auth">Войти</string>
     <string name="fragment_main_page_mainText">лучшее, что есть в интернете.</string>
+
+    <string-array name="fragment_salution_salutionTexts">
+        <item>Удобный интерфейс</item>
+        <item>Много годного контента</item>
+        <item>Непередаваемые эмоции</item>
+        <item>Добро пожаловать в Reddit!</item>
+    </string-array>
 </resources>

@@ -1,0 +1,67 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="ru.iu3.reddit"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml
+10
+11    <application
+11-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:5:5-29:19
+12        android:allowBackup="true"
+12-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:6:9-35
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.6.0] C:\Users\ikoly\.gradle\caches\transforms-2\files-2.1\bd83fe788b1a8900af6a554d36b004a7\core-1.6.0\AndroidManifest.xml:24:18-86
+14        android:debuggable="true"
+15        android:icon="@mipmap/ic_launcher"
+15-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:7:9-43
+16        android:label="@string/app_name"
+16-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:8:9-41
+17        android:roundIcon="@mipmap/ic_launcher_round"
+17-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:9:9-54
+18        android:supportsRtl="true"
+18-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:10:9-35
+19        android:testOnly="true"
+20        android:theme="@style/Theme.Reddit" >
+20-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:11:9-44
+21        <activity android:name="ru.iu3.reddit.MainActivity" >
+21-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:12:9-28:20
+21-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:12:19-47
+22            <intent-filter>
+22-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:13:13-17:29
+23                <action android:name="android.intent.action.MAIN" />
+23-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:14:17-69
+23-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:14:25-66
+24
+25                <category android:name="android.intent.category.LAUNCHER" />
+25-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:16:17-77
+25-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:16:27-74
+26            </intent-filter>
+27            <intent-filter>
+27-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:18:13-27:29
+28                <action android:name="android.intent.action.VIEW" />
+28-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:19:17-69
+28-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:19:25-66
+29
+30                <category android:name="android.intent.category.DEFAULT" />
+30-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:21:17-76
+30-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:21:27-73
+31                <category android:name="android.intent.category.BROWSABLE" />
+31-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:22:17-78
+31-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:22:27-75
+32
+33                <data
+33-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:24:17-26:53
+34                    android:host="www.reddit.com"
+34-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:26:21-50
+35                    android:scheme="https" />
+35-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:25:21-43
+36            </intent-filter>
+37        </activity>
+38    </application>
+39
+40</manifest>
