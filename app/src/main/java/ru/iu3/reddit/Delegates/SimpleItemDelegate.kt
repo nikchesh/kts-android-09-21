@@ -11,7 +11,7 @@ import ru.iu3.reddit.R
 import ru.iu3.reddit.items.SimpleItem
 
 
-class SimpleItemDelegate : AbsListItemAdapterDelegate<Any, Any, SimpleItemDelegate.ViewHolder>() {
+class SimpleItemDelegate(private val onItemClick: (item: SimpleItem) -> Unit) : AbsListItemAdapterDelegate<Any, Any, SimpleItemDelegate.ViewHolder>() {
 
     override fun isForViewType(item: Any, items: MutableList<Any>, position: Int): Boolean {
         return item is SimpleItem
@@ -20,7 +20,7 @@ class SimpleItemDelegate : AbsListItemAdapterDelegate<Any, Any, SimpleItemDelega
     override fun onCreateViewHolder(parent: ViewGroup): ViewHolder {
         val itemView = LayoutInflater.from(parent.context)
             .inflate(R.layout.item_simple, parent, false)
-        return ViewHolder(itemView)
+        return ViewHolder(itemView, onItemClick)
     }
 
     override fun onBindViewHolder(item: Any, viewHolder: ViewHolder, payloads: MutableList<Any>) {
@@ -28,13 +28,16 @@ class SimpleItemDelegate : AbsListItemAdapterDelegate<Any, Any, SimpleItemDelega
     }
 
     inner class ViewHolder(
-        override val containerView: View
+        override val containerView: View,
+        private val onItemClick: (item: SimpleItem) -> Unit
     ) : RecyclerView.ViewHolder(containerView), LayoutContainer {
 
         private var currentItem: SimpleItem? = null
 
 
-
+        init {
+            containerView.setOnClickListener { currentItem?.let(onItemClick) }
+        }
 
 
         fun bind(item: SimpleItem) = with(containerView) {

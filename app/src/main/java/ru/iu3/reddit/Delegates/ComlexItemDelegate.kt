@@ -9,9 +9,10 @@ import kotlinx.android.extensions.LayoutContainer
 import kotlinx.android.synthetic.main.item_complex.view.*
 import ru.iu3.reddit.R
 import ru.iu3.reddit.items.ComplexItem
+import ru.iu3.reddit.items.SimpleItem
 
 
-class ComplexItemDelegate : AbsListItemAdapterDelegate<Any, Any, ComplexItemDelegate.ViewHolder>() {
+class ComplexItemDelegate(private val onItemClick: (item: ComplexItem) -> Unit) : AbsListItemAdapterDelegate<Any, Any, ComplexItemDelegate.ViewHolder>() {
 
     override fun isForViewType(item: Any, items: MutableList<Any>, position: Int): Boolean {
         return item is ComplexItem
@@ -20,7 +21,7 @@ class ComplexItemDelegate : AbsListItemAdapterDelegate<Any, Any, ComplexItemDele
     override fun onCreateViewHolder(parent: ViewGroup): ViewHolder {
         val itemView = LayoutInflater.from(parent.context)
             .inflate(R.layout.item_complex, parent, false)
-        return ViewHolder(itemView)
+        return ViewHolder(itemView, onItemClick)
     }
 
     override fun onBindViewHolder(item: Any, viewHolder: ViewHolder, payloads: MutableList<Any>) {
@@ -28,10 +29,16 @@ class ComplexItemDelegate : AbsListItemAdapterDelegate<Any, Any, ComplexItemDele
     }
 
     inner class ViewHolder(
-        override val containerView: View
+        override val containerView: View,
+        private val onItemClick: (item: ComplexItem) -> Unit
     ) : RecyclerView.ViewHolder(containerView), LayoutContainer {
 
         private var currentItem: ComplexItem? = null
+
+
+        init {
+            containerView.setOnClickListener { currentItem?.let(onItemClick) }
+        }
 
 
 

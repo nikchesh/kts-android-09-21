@@ -6,12 +6,15 @@ import com.hannesdorfmann.adapterdelegates4.AsyncListDifferDelegationAdapter
 import ru.iu3.reddit.items.ComplexItem
 import ru.iu3.reddit.items.SimpleItem
 
-class ComplexDelegatesListAdapter : AsyncListDifferDelegationAdapter<Any>(ComplexDiffCallback()) {
+
+class ComplexDelegatesListAdapter(
+    onOpenInBrowser: (Any) -> Unit
+) : AsyncListDifferDelegationAdapter<Any>(ComplexDiffCallback()) {
 
     init {
         delegatesManager
-            .addDelegate(SimpleItemDelegate())
-            .addDelegate(ComplexItemDelegate())
+            .addDelegate(SimpleItemDelegate(onOpenInBrowser))
+            .addDelegate(ComplexItemDelegate(onOpenInBrowser))
             .addDelegate(PageLoadingAdapterDelegate())
     }
 

@@ -1,5 +1,7 @@
 package ru.iu3.reddit
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
@@ -29,10 +31,16 @@ class MainPage : Fragment(R.layout.fragment_main_page) {
     }
 
     private fun initList() {
-        complexAdapter = ComplexDelegatesListAdapter()
+        complexAdapter = ComplexDelegatesListAdapter(
+            // Sharing
+            onOpenInBrowser = {Any ->
+                val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.reddit.com"))
+                startActivity(intent)
+            }
+        )
         with(binding.list) {
             val orientation = RecyclerView.VERTICAL
-            this!!.adapter = complexAdapter
+            adapter = complexAdapter
             layoutManager = LinearLayoutManager(context, orientation, false)
 
             // Pagination
