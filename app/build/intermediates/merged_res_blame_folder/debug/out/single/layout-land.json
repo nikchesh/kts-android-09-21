@@ -4,12 +4,12 @@
         "source": "D:\\AndroidStudioProjects\\kts-android-09-21\\app\\src\\main\\res\\layout-land\\item_loading_page.xml"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\kts-android-09-21\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout-land\\activity_main.xml",
-        "source": "D:\\AndroidStudioProjects\\kts-android-09-21\\app\\src\\main\\res\\layout-land\\activity_main.xml"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\kts-android-09-21\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout-land\\item_salution_page.xml",
         "source": "D:\\AndroidStudioProjects\\kts-android-09-21\\app\\src\\main\\res\\layout-land\\item_salution_page.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\kts-android-09-21\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout-land\\activity_main.xml",
+        "source": "D:\\AndroidStudioProjects\\kts-android-09-21\\app\\src\\main\\res\\layout-land\\activity_main.xml"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\kts-android-09-21\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout-land\\item_simple.xml",

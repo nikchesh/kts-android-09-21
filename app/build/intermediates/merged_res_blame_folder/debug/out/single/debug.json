@@ -28,12 +28,12 @@
         "source": "D:\\AndroidStudioProjects\\kts-android-09-21\\app\\src\\main\\res\\layout-land\\item_complex.xml"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\kts-android-09-21\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_fragment_main_page.xml.flat",
-        "source": "D:\\AndroidStudioProjects\\kts-android-09-21\\app\\src\\main\\res\\layout-land\\fragment_main_page.xml"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\kts-android-09-21\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_item_loading_page.xml.flat",
         "source": "D:\\AndroidStudioProjects\\kts-android-09-21\\app\\src\\main\\res\\layout-land\\item_loading_page.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\kts-android-09-21\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_fragment_main_page.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\kts-android-09-21\\app\\src\\main\\res\\layout-land\\fragment_main_page.xml"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\kts-android-09-21\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_fragment_salution.xml.flat",

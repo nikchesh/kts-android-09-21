@@ -5,48 +5,159 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
-import java.lang.NullPointerException;
 import java.lang.Override;
-import java.lang.String;
 import ru.iu3.reddit.R;
 
 public final class FragmentAuthorizationBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final View rootView;
 
-  @NonNull
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout-land/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   */
+  @Nullable
   public final Button buttonLogin;
 
-  @NonNull
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout-land/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   */
+  @Nullable
   public final TextInputEditText inputLogin;
 
-  @NonNull
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout-land/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   */
+  @Nullable
   public final TextInputEditText inputPassword;
 
-  @NonNull
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout-land/</li>
+   * </ul>
+   */
+  @Nullable
+  public final Button loginButton;
+
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout-land/</li>
+   * </ul>
+   */
+  @Nullable
+  public final ProgressBar loginProgress;
+
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout-land/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   */
+  @Nullable
   public final TextInputLayout textLogin;
 
-  @NonNull
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout-land/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   */
+  @Nullable
   public final TextInputLayout textPassword;
 
-  @NonNull
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout-land/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   */
+  @Nullable
   public final TextView textView;
 
-  private FragmentAuthorizationBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button buttonLogin, @NonNull TextInputEditText inputLogin,
-      @NonNull TextInputEditText inputPassword, @NonNull TextInputLayout textLogin,
-      @NonNull TextInputLayout textPassword, @NonNull TextView textView) {
+  private FragmentAuthorizationBinding(@NonNull View rootView, @Nullable Button buttonLogin,
+      @Nullable TextInputEditText inputLogin, @Nullable TextInputEditText inputPassword,
+      @Nullable Button loginButton, @Nullable ProgressBar loginProgress,
+      @Nullable TextInputLayout textLogin, @Nullable TextInputLayout textPassword,
+      @Nullable TextView textView) {
     this.rootView = rootView;
     this.buttonLogin = buttonLogin;
     this.inputLogin = inputLogin;
     this.inputPassword = inputPassword;
+    this.loginButton = loginButton;
+    this.loginProgress = loginProgress;
     this.textLogin = textLogin;
     this.textPassword = textPassword;
     this.textView = textView;
@@ -54,7 +165,7 @@ public final class FragmentAuthorizationBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public View getRoot() {
     return rootView;
   }
 
@@ -75,50 +186,23 @@ public final class FragmentAuthorizationBinding implements ViewBinding {
 
   @NonNull
   public static FragmentAuthorizationBinding bind(@NonNull View rootView) {
-    // The body of this method is generated in a way you would not otherwise write.
-    // This is done to optimize the compiled bytecode for size and performance.
-    int id;
-    missingId: {
-      id = R.id.buttonLogin;
-      Button buttonLogin = rootView.findViewById(id);
-      if (buttonLogin == null) {
-        break missingId;
-      }
+    Button buttonLogin = rootView.findViewById(R.id.buttonLogin);
 
-      id = R.id.inputLogin;
-      TextInputEditText inputLogin = rootView.findViewById(id);
-      if (inputLogin == null) {
-        break missingId;
-      }
+    TextInputEditText inputLogin = rootView.findViewById(R.id.inputLogin);
 
-      id = R.id.inputPassword;
-      TextInputEditText inputPassword = rootView.findViewById(id);
-      if (inputPassword == null) {
-        break missingId;
-      }
+    TextInputEditText inputPassword = rootView.findViewById(R.id.inputPassword);
 
-      id = R.id.textLogin;
-      TextInputLayout textLogin = rootView.findViewById(id);
-      if (textLogin == null) {
-        break missingId;
-      }
+    Button loginButton = rootView.findViewById(R.id.loginButton);
 
-      id = R.id.textPassword;
-      TextInputLayout textPassword = rootView.findViewById(id);
-      if (textPassword == null) {
-        break missingId;
-      }
+    ProgressBar loginProgress = rootView.findViewById(R.id.loginProgress);
 
-      id = R.id.textView;
-      TextView textView = rootView.findViewById(id);
-      if (textView == null) {
-        break missingId;
-      }
+    TextInputLayout textLogin = rootView.findViewById(R.id.textLogin);
 
-      return new FragmentAuthorizationBinding((ConstraintLayout) rootView, buttonLogin, inputLogin,
-          inputPassword, textLogin, textPassword, textView);
-    }
-    String missingId = rootView.getResources().getResourceName(id);
-    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
+    TextInputLayout textPassword = rootView.findViewById(R.id.textPassword);
+
+    TextView textView = rootView.findViewById(R.id.textView);
+
+    return new FragmentAuthorizationBinding(rootView, buttonLogin, inputLogin, inputPassword,
+        loginButton, loginProgress, textLogin, textPassword, textView);
   }
 }
