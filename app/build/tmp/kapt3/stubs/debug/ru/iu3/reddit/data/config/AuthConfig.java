@@ -15,7 +15,7 @@ public final class AuthConfig {
     @org.jetbrains.annotations.NotNull()
     public static final java.lang.String SCOPE = "read identity vote save";
     @org.jetbrains.annotations.NotNull()
-    public static final java.lang.String CLIENT_ID = "";
+    public static final java.lang.String CLIENT_ID = "Cheshov";
     @org.jetbrains.annotations.NotNull()
     public static final java.lang.String CLIENT_SECRET = "ImFrSvl28AsxqsNeSGKJxA";
     @org.jetbrains.annotations.NotNull()

@@ -9,7 +9,7 @@ object AuthConfig {
     const val RESPONSE_TYPE = ResponseTypeValues.CODE
     const val SCOPE = "read identity vote save"
 
-    const val CLIENT_ID = ""
+    const val CLIENT_ID = "Cheshov"
     const val CLIENT_SECRET = "ImFrSvl28AsxqsNeSGKJxA"
     const val CALLBACK_URL = "school://kts.studio/callback"
 }
