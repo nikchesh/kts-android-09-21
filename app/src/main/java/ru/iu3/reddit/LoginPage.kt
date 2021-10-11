@@ -19,7 +19,7 @@ import net.openid.appauth.AuthorizationException
 import net.openid.appauth.AuthorizationResponse
 import ru.iu3.reddit.databinding.FragmentAuthorizationBinding
 import ru.iu3.reddit.model.LoginViewModel
-
+import ru.iu3.reddit.utils.toast
 
 class LoginPage : Fragment(R.layout.fragment_authorization) {
 
@@ -47,7 +47,7 @@ class LoginPage : Fragment(R.layout.fragment_authorization) {
     }
 
     private fun bindViewModel() {
-        binding.loginButton.setOnClickListener { viewModel.openLoginPage() }
+        binding.loginButton?.setOnClickListener { viewModel.openLoginPage() }
         viewModel.loadingLiveData.observe(viewLifecycleOwner, ::updateIsLoading)
         viewModel.openAuthPageLiveData.observe(viewLifecycleOwner, ::openAuthPage)
         viewModel.toastLiveData.observe(viewLifecycleOwner, ::toast)
@@ -57,8 +57,8 @@ class LoginPage : Fragment(R.layout.fragment_authorization) {
     }
 
     private fun updateIsLoading(isLoading: Boolean) = with(binding) {
-        loginButton.isVisible = !isLoading
-        loginProgress.isVisible = isLoading
+        loginButton?.isVisible = !isLoading
+        loginProgress?.isVisible = isLoading
     }
 
     private fun openAuthPage(intent: Intent) {
