@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "D:\\AndroidStudioProjects\\kts-android-09-21\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout-land\\item_loading_page.xml",
+        "source": "D:\\AndroidStudioProjects\\kts-android-09-21\\app\\src\\main\\res\\layout-land\\item_loading_page.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\kts-android-09-21\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout-land\\item_salution_page.xml",
+        "source": "D:\\AndroidStudioProjects\\kts-android-09-21\\app\\src\\main\\res\\layout-land\\item_salution_page.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\kts-android-09-21\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout-land\\activity_main.xml",
+        "source": "D:\\AndroidStudioProjects\\kts-android-09-21\\app\\src\\main\\res\\layout-land\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\kts-android-09-21\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout-land\\item_simple.xml",
+        "source": "D:\\AndroidStudioProjects\\kts-android-09-21\\app\\src\\main\\res\\layout-land\\item_simple.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\kts-android-09-21\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout-land\\fragment_authorization.xml",
+        "source": "D:\\AndroidStudioProjects\\kts-android-09-21\\app\\src\\main\\res\\layout-land\\fragment_authorization.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\kts-android-09-21\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout-land\\item_complex.xml",
+        "source": "D:\\AndroidStudioProjects\\kts-android-09-21\\app\\src\\main\\res\\layout-land\\item_complex.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\kts-android-09-21\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout-land\\fragment_salution.xml",
+        "source": "D:\\AndroidStudioProjects\\kts-android-09-21\\app\\src\\main\\res\\layout-land\\fragment_salution.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\kts-android-09-21\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout-land\\fragment_main_page.xml",
+        "source": "D:\\AndroidStudioProjects\\kts-android-09-21\\app\\src\\main\\res\\layout-land\\fragment_main_page.xml"
+    }
+]

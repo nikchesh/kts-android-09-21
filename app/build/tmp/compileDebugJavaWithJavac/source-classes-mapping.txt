@@ -1,0 +1,21 @@
+ru/iu3/reddit/databinding/FragmentMainPageBinding.java
+ ru.iu3.reddit.databinding.FragmentMainPageBinding
+ru/iu3/reddit/databinding/FragmentAuthorizationBinding.java
+ ru.iu3.reddit.databinding.FragmentAuthorizationBinding
+ru/iu3/reddit/databinding/ItemSimpleBinding.java
+ ru.iu3.reddit.databinding.ItemSimpleBinding
+ru/iu3/reddit/databinding/FragmentSalutionBinding.java
+ ru.iu3.reddit.databinding.FragmentSalutionBinding
+ru/iu3/reddit/databinding/ItemComplexBinding.java
+ ru.iu3.reddit.databinding.ItemComplexBinding
+ru/iu3/reddit/utils/SingleLiveEvent.java
+ ru.iu3.reddit.utils.SingleLiveEvent
+ ru.iu3.reddit.utils.SingleLiveEvent$1
+ru/iu3/reddit/BuildConfig.java
+ ru.iu3.reddit.BuildConfig
+ru/iu3/reddit/databinding/ActivityMainBinding.java
+ ru.iu3.reddit.databinding.ActivityMainBinding
+ru/iu3/reddit/databinding/ItemLoadingPageBinding.java
+ ru.iu3.reddit.databinding.ItemLoadingPageBinding
+ru/iu3/reddit/databinding/ItemSalutionPageBinding.java
+ ru.iu3.reddit.databinding.ItemSalutionPageBinding

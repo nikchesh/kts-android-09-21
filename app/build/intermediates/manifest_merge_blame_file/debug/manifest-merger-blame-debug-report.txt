@@ -1,0 +1,126 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="ru.iu3.reddit"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:5:5-67
+11-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:6:5-79
+12-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:6:22-76
+13
+14    <queries>
+14-->[net.openid:appauth:0.10.0] C:\Users\ikoly\.gradle\caches\transforms-2\files-2.1\286e67f55f3400e03a5d3d6f1e831db3\jetified-appauth-0.10.0\AndroidManifest.xml:24:5-32:15
+15        <intent>
+15-->[net.openid:appauth:0.10.0] C:\Users\ikoly\.gradle\caches\transforms-2\files-2.1\286e67f55f3400e03a5d3d6f1e831db3\jetified-appauth-0.10.0\AndroidManifest.xml:25:9-31:18
+16            <action android:name="android.intent.action.VIEW" />
+16-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:23:17-69
+16-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:23:25-66
+17
+18            <category android:name="android.intent.category.BROWSABLE" />
+18-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:26:17-78
+18-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:26:27-75
+19
+20            <data android:scheme="https" />
+20-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:28:17-30:53
+20-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:29:21-43
+21        </intent>
+22    </queries>
+23
+24    <application
+24-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:9:5-33:19
+25        android:allowBackup="true"
+25-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:10:9-35
+26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+26-->[androidx.core:core:1.6.0] C:\Users\ikoly\.gradle\caches\transforms-2\files-2.1\bd83fe788b1a8900af6a554d36b004a7\core-1.6.0\AndroidManifest.xml:24:18-86
+27        android:debuggable="true"
+28        android:icon="@mipmap/ic_launcher"
+28-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:11:9-43
+29        android:label="@string/app_name"
+29-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:12:9-41
+30        android:roundIcon="@mipmap/ic_launcher_round"
+30-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:13:9-54
+31        android:supportsRtl="true"
+31-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:14:9-35
+32        android:testOnly="true"
+33        android:theme="@style/Theme.Reddit" >
+33-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:15:9-44
+34        <activity android:name="ru.iu3.reddit.MainActivity" >
+34-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:16:9-32:20
+34-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:16:19-47
+35            <intent-filter>
+35-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:17:13-21:29
+36                <action android:name="android.intent.action.MAIN" />
+36-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:18:17-69
+36-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:18:25-66
+37
+38                <category android:name="android.intent.category.LAUNCHER" />
+38-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:20:17-77
+38-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:20:27-74
+39            </intent-filter>
+40            <intent-filter>
+40-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:22:13-31:29
+41                <action android:name="android.intent.action.VIEW" />
+41-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:23:17-69
+41-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:23:25-66
+42
+43                <category android:name="android.intent.category.DEFAULT" />
+43-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:25:17-76
+43-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:25:27-73
+44                <category android:name="android.intent.category.BROWSABLE" />
+44-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:26:17-78
+44-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:26:27-75
+45
+46                <data
+46-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:28:17-30:53
+47                    android:host="www.reddit.com"
+47-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:30:21-50
+48                    android:scheme="https" />
+48-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:29:21-43
+49            </intent-filter>
+50        </activity>
+51        <activity
+51-->[net.openid:appauth:0.10.0] C:\Users\ikoly\.gradle\caches\transforms-2\files-2.1\286e67f55f3400e03a5d3d6f1e831db3\jetified-appauth-0.10.0\AndroidManifest.xml:35:9-39:77
+52            android:name="net.openid.appauth.AuthorizationManagementActivity"
+52-->[net.openid:appauth:0.10.0] C:\Users\ikoly\.gradle\caches\transforms-2\files-2.1\286e67f55f3400e03a5d3d6f1e831db3\jetified-appauth-0.10.0\AndroidManifest.xml:36:13-78
+53            android:exported="false"
+53-->[net.openid:appauth:0.10.0] C:\Users\ikoly\.gradle\caches\transforms-2\files-2.1\286e67f55f3400e03a5d3d6f1e831db3\jetified-appauth-0.10.0\AndroidManifest.xml:37:13-37
+54            android:launchMode="singleTask"
+54-->[net.openid:appauth:0.10.0] C:\Users\ikoly\.gradle\caches\transforms-2\files-2.1\286e67f55f3400e03a5d3d6f1e831db3\jetified-appauth-0.10.0\AndroidManifest.xml:38:13-44
+55            android:theme="@style/Theme.AppCompat.Translucent.NoTitleBar" />
+55-->[net.openid:appauth:0.10.0] C:\Users\ikoly\.gradle\caches\transforms-2\files-2.1\286e67f55f3400e03a5d3d6f1e831db3\jetified-appauth-0.10.0\AndroidManifest.xml:39:13-74
+56        <activity
+56-->[net.openid:appauth:0.10.0] C:\Users\ikoly\.gradle\caches\transforms-2\files-2.1\286e67f55f3400e03a5d3d6f1e831db3\jetified-appauth-0.10.0\AndroidManifest.xml:40:9-51:20
+57            android:name="net.openid.appauth.RedirectUriReceiverActivity"
+57-->[net.openid:appauth:0.10.0] C:\Users\ikoly\.gradle\caches\transforms-2\files-2.1\286e67f55f3400e03a5d3d6f1e831db3\jetified-appauth-0.10.0\AndroidManifest.xml:41:13-74
+58            android:exported="true" >
+58-->[net.openid:appauth:0.10.0] C:\Users\ikoly\.gradle\caches\transforms-2\files-2.1\286e67f55f3400e03a5d3d6f1e831db3\jetified-appauth-0.10.0\AndroidManifest.xml:42:13-36
+59            <intent-filter>
+59-->[net.openid:appauth:0.10.0] C:\Users\ikoly\.gradle\caches\transforms-2\files-2.1\286e67f55f3400e03a5d3d6f1e831db3\jetified-appauth-0.10.0\AndroidManifest.xml:43:13-50:29
+60                <action android:name="android.intent.action.VIEW" />
+60-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:23:17-69
+60-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:23:25-66
+61
+62                <category android:name="android.intent.category.DEFAULT" />
+62-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:25:17-76
+62-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:25:27-73
+63                <category android:name="android.intent.category.BROWSABLE" />
+63-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:26:17-78
+63-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:26:27-75
+64
+65                <data android:scheme="school" />
+65-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:28:17-30:53
+65-->D:\AndroidStudioProjects\kts-android-09-21\app\src\main\AndroidManifest.xml:29:21-43
+66            </intent-filter>
+67        </activity>
+68    </application>
+69
+70</manifest>
