@@ -15,9 +15,9 @@ public final class AuthConfig {
     @org.jetbrains.annotations.NotNull()
     public static final java.lang.String SCOPE = "read identity vote save";
     @org.jetbrains.annotations.NotNull()
-    public static final java.lang.String CLIENT_ID = "";
+    public static final java.lang.String CLIENT_ID = "ImFrSvl28AsxqsNeSGKJxA";
     @org.jetbrains.annotations.NotNull()
-    public static final java.lang.String CLIENT_SECRET = "ImFrSvl28AsxqsNeSGKJxA";
+    public static final java.lang.String CLIENT_SECRET = "";
     @org.jetbrains.annotations.NotNull()
     public static final java.lang.String CALLBACK_URL = "school://kts.studio/callback";
     @org.jetbrains.annotations.NotNull()
